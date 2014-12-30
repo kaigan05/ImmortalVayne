@@ -50,8 +50,8 @@ namespace ImmortalVayne
 
         private void Game_OnGameLoad(EventArgs args)
         {
-            _activator=new Activator();
-            //GankDetector.AddGankMenu();
+            _activator = new Activator();
+            GankDetector.AddGankMenu();
             if (Player.ChampionName != CharName) return;
             SetSpells();
             _menu = new MenuWrapper("Immortal Vayne");
